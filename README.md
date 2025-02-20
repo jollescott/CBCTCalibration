@@ -1,6 +1,7 @@
 # CBCTCalibration
 
-## Aim/Object: 
+## Aim/Object:
+
 To measure the geometry parameters from a sparse projection data set of a stack of
 beads.
 In cone-beam tomography, the projections are distorted by the perspective the divergent
@@ -14,11 +15,18 @@ principle be sufficient for the reconstruction. The beam usually doesn’t hit t
 perpendicularly, therefore we also need to know the position of the piercing point on the
 detector px and py.
 
+## Parameters needed for a clean reconstruction:
 
-## Parameters needed for a clean reconstruction: 
-
-1. COR - Center of Rotation 
+1. COR - Center of Rotation
 2. CTilt - Tilt of the Rotation Axis
 3. SOD - Source Object Distance
 4. SDD - Source Detector Distance
-5. PP - Piercing Point 
+5. PP - Piercing Point
+
+## Git Large File Storage
+
+Calibration files in folder `data` is stored online through `git-lfs`, and can be access locally by:
+
+1. `git lfs fetch --all`
+2. `git lfs pull`
+3. `git lfs checkout`
